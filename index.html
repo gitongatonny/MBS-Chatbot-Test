@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisha Bora Sacco Virtual Assistant</title>
+    <style>
+        /* Add any custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Chatbot will be embedded here -->
+    <script>
+        window.PICKAXE = window.PICKAXE || {
+            pickaxes: [],
+            style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDMAYEc+QJckgGXFAhUGBQ30DEcIGo0wBBdgS5VAcAaATm8A1GoCpYQJQmgEVYAYgDBAQRKAhe0ASXIAURAOyAimqAFxCAsEGAQjSADFiACCIASoAACIBA+oBCFoAQfIAhPoAtKIAAg4AyaIA2CYBZO4ABaYBK8IAYQYBJOoBVUIBdWYAuaYAAIYBmaoA9a4CxQYBNdIB6CYB/cIBSFYAlV4AqCYCDiYAZFIA5aYAll4CfRoAqL4B6TIBIDYAUDIBvcIAAz4CK4oDiMoAuWIAAIoAAtoBAuoDCYoDqDIAJW4DILIAAo4A1xYAqFoCAHIAgAoCgpYAYhgBIgF0NgADEACFgGGhQALmQ1AAXogEmQwCZ6IAGhMADC6AHgDAFCYgCGBQARh4AqecAmLyAccjAAA2gGebQCoaIAxSEAIMOAFuFAGkqgEogQAS6IAEEcAHY2AYIjAFkKgGBgwAWBoAonUA6BKAWfzAEWlgAJQwDOiIB6kkAgmyADQNAFAagBX+QCOoIBUDsAZEWATonAIfhgADBAAhgFAPgAYgEbgwC2e4ABlcAIbeAaApACGAgEiwwCZMQAyADkgCDOQBmsYAeicAagWAdBrAJvagDfUQAz4IAGE0AYLCAWx3AF/xgBBgwCzIoBZUEAVu6AR9FAOeggCbTQBCjIAgpsAAAmAKjhAN6vgGqqwAVgIBrk0A3GKABebAKRKgGZXQCXSYBNQUAg02ABgTAIEQgAqDQBNkoAXa8AvV6AXZlAL4RgHwwQDiRoBlYsASzOABlNADUBgAgkQBCCYAAJkAxrCAZrFABFXgA96QBJBYBgAkAWMWAUnhANUagD0QQDCtoAEIsA1wyAWJ1AOIPgF6rwB5H8ARwjAGWfQAGK0AN0zAFzKQBM0sAAikAAAgA"
+        };
+        window.PICKAXE.pickaxes.push({
+            id: "Maisha_Bora_Sacco_Virtual_Assistant_8VSQ2",
+            type: "fab"
+        });
+        const { id: _fid } = window.PICKAXE.pickaxes[0];
+        fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
+            .then((e) => e.json())
+            .then(({ v: e }) => {
+                const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
+                if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
+                    const e = document.createElement("script");
+                    e.src = t + "/bundle.js";
+                    e.defer = !0;
+                    document.head.appendChild(e);
+                }
+            });
+    </script>
+</body>
+
+</html>
